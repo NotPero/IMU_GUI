@@ -1,4 +1,4 @@
-# IMU SYSTEM PRO (v3.3) Developer Guide
+# IMU Monitor Developer Guide
 
 This system is a high-performance IMU real-time monitor and data acquisition client implemented in Julia. It is designed for high-rate serial data and balances UI responsiveness with preservation of raw hardware data.
 
