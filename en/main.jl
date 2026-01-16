@@ -35,7 +35,7 @@ const CONFIG = (
         history  = 600,               # Number of historical samples kept in plots
         refresh  = 0.05,              # UI refresh interval (seconds)
         # IMPORTANT: directory used to save CSV recordings (absolute or relative)
-        save_dir = "/mnt/pocket/imu_logs" 
+        save_dir = "./imu_logs" 
     )
 )
 
