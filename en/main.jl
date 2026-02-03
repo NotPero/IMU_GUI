@@ -1,18 +1,19 @@
 using LibSerialPort, Printf, Dates, GLMakie, LinearAlgebra, GeometryBasics
 
 # ==========================================================
-# 1. Configuration
+# 1. Deep configuration center (modify save path and UI sizes here)
 # ==========================================================
-# Centralized configuration for UI, timing, and data parameters.
+# The CONFIG tuple centralizes UI sizing, colors, timing, and data parameters.
+# Modify these values to change the application's appearance and behavior.
 const CONFIG = (
     window = (
-        size       = (1650, 1000),    # Window dimensions (width, height)
-        title      = "IMU Monitor",   # Window title
-        bg_color   = :white           # Background color
+        size       = (1650, 1000),    # Window pixel size (width, height)
+        title      = "IMU Monitor",   # Window title text
+        bg_color   = :white           # Background color for figure
     ),
     toolbar = (
-        height     = 70,              # Toolbar height
-        timer_w    = 180,             # Uptime timer width
+        height     = 70,              # Toolbar height in pixels
+        timer_w    = 180,             # Width reserved for uptime timer
         btn_w      = 120,             # Button width
         btn_h      = 38,              # Button height
         status_w   = 280,             # Status label width
